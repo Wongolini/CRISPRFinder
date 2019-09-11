@@ -8,18 +8,12 @@ from Bio import SeqIO;
 if __name__ == '__main__':
     accessions = []
     Query1 = sys.argv[1]
-    #dn = sys.argv[2]
-    #up = sys.argv[3]
-    #up=int(up)
-    #dn=int(dn)
+ 
     length_list = []
     for sec_lengths in SeqIO.parse(Query1, "fasta"):
         longboi = sec_lengths.seq
         length_list.append(len(longboi))
-#    plt.hist(length_list, bins = 30)
- #   plt.xlabel("sequence lengths")
- #   plt.ylabel("frequency")
- #   plt.savefig('histogram_of_seq_lengths.png')
+
 
     accessions=[]
     for seq_rec in SeqIO.parse(Query1, "fasta"):
@@ -57,12 +51,7 @@ if __name__ == '__main__':
 		check.seq = ''
                 check.id= ''
 		
-     #       if ((len(checker) < dn)):
-      #          check.seq = ''
-       #         check.id=''
-        #    if (len(checker)>up):
-         #       check.seq = ''
-          #      check.id=''
+
             else:
                 pass;
 
