@@ -89,8 +89,8 @@ if __name__ == '__main__':
 	print(recid)
         rec_seq = sec.seq
         if recid  in treasures["query_name"]:
-            fuck = (treasures["query_name"].index(recid))
-#           print(treasures["query_name"][fuck])
+            qn = (treasures["query_name"].index(recid))
+#           #print(treasures["query_name"][qn])
         if 'lcl' in recid:
             stripper = recid.index('_cds_')
             recid = recid[stripper:]
